@@ -120,3 +120,29 @@ describe('isVowel', () => {
         expect(isVowel()).toBe(false)
     })
 })
+describe('add', () => {
+    it('should be a defined function', () => {
+        expect(typeof add).toBe('function')
+    })
+    it('returns 5 on inputs of 2 and 3', () => {
+        expect(add(2, 3)).toBe(5)
+    })
+    it('returns -12 on inputs of -3 and -9', () => {
+        expect(add(-3, -9)).toBe(-12)
+    })
+    it('returns 11 on inputs of "5" and 6', () => {
+        expect(add(5, 6)).toBe(11)
+    })
+    it('returns 6 on inputs of "-4" and "10"', () => {
+        expect(add("-4", "10")).toBe(6)
+    })
+    it('returns NaN on inputs of "banana" and "split"', () => {
+        expect(add("banana", "split")).toEqual(NaN)
+    })
+    it('returns NaN on inputs of 2 and "apples', () => {
+        expect(add(2, "apples")).toEqual(NaN)
+    })
+    it('returns NaN on no input', () => {
+        expect(add()).toEqual(NaN)
+    })
+})

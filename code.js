@@ -24,3 +24,8 @@ function isVowel(k){
     else if (k === 'A') return true
     else return false
 }
+function add(x,y){
+    let a = parseInt(x)
+    let b = parseInt(y)
+    return a + b
+}

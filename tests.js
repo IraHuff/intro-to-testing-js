@@ -40,3 +40,20 @@ describe('sayHello', () => {
         expect(sayHello(true)).toBe('Hello, World!')
     })
 })
+describe('isFive', () => {
+    it('should be a defined function', () => {
+        expect(typeof isFive).toBe('function')
+    })
+    it('when passed 5 returns true', () =>{
+        expect(isFive(5)).toBe(true)
+    })
+    it('when passed "5" returns true', () =>{
+        expect(isFive("5")).toBe(true)
+    })
+    it('when passed 4 returns false', () =>{
+        expect(isFive(4)).toBe(false)
+    })
+    it('when passed five returns false', () =>{
+        expect(isFive('five')).toBe(false)
+    })
+})

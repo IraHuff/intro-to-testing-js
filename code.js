@@ -20,8 +20,8 @@ function isEven(n){
     }else return false
 }
 function isVowel(k){
-    if (k === 'a') return true
-    else if (k === 'A') return true
+    if (k === 'a' || 'e' || 'i' || 'o' || 'u') return true
+    else if (k === 'A' || 'E' || 'I' || 'O' || 'U') return true
     else return false
 }
 function add(x,y){

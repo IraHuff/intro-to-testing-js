@@ -57,3 +57,66 @@ describe('isFive', () => {
         expect(isFive('five')).toBe(false)
     })
 })
+describe('isEven', () => {
+    it('should be a defined function', () => {
+        expect(typeof isEven).toBe('function')
+    })
+    it('returns a boolian', () => {
+        expect(typeof isEven()).toBe('boolean')
+    })
+    it('returns true when passed 2', () => {
+        expect(isEven(2)).toBe(true)
+    })
+    it('returns true when passed -4', () => {
+        expect(isEven(-4)).toBe(true)
+    })
+    it('returns false when passed 3', () => {
+        expect(isEven(3)).toBe(false)
+    })
+    it('returns false when passed "bananna"', () => {
+        expect(isEven('bananna')).toBe(false)
+    })
+    it('returns true when passed "8"', () => {
+        expect(isEven('8')).toBe(true)
+    })
+    it('returns false when passed Infinity', () => {
+        expect(isEven(Infinity)).toBe(false)
+    })
+    it('returns false when passed true', () => {
+        expect(isEven(true)).toBe(false)
+    })
+    it('returns false when passed nothing', () => {
+        expect(isEven()).toBe(false)
+    })
+
+
+})
+describe('isVowel', () => {
+    it('should be a defined function', () => {
+        expect(typeof isVowel).toBe('function')
+    })
+    it('returns a boolian', () => {
+        expect(typeof isVowel()).toBe('boolean')
+    })
+    it('returns true when passed "a"', () => {
+        expect(isVowel('a')).toBe(true)
+    })
+    it('returns true when passed "A"', () => {
+        expect(isVowel('A')).toBe(true)
+    })
+    it('returns false when passed "y"', () => {
+        expect(isVowel('y')).toBe(false)
+    })
+    it('returns fasle when passed 4', () => {
+        expect(isVowel(4)).toBe(false)
+    })
+    it('returns a false when passed true', () => {
+        expect(isVowel(true)).toBe(false)
+    })
+    it('returns false when passed "banana"', () => {
+        expect(isVowel("banana")).toBe(false)
+    })
+    it('returns false when passed nothing', () => {
+        expect(isVowel()).toBe(false)
+    })
+})

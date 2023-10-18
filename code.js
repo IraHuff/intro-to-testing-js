@@ -2,4 +2,6 @@
 const helloWorld = function() {
     return "Hello, World!";
 }
-function sayHello(){}
+function sayHello(name){
+    return `Hello, ${name}!`
+}
